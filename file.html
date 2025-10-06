@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs">
+        <button id="formTab" class="active">Registration Form</button>
+        <button id="carouselTab">Carousel</button>
+    </div>
+    <section id="formSection">
+        <form id="registerForm">
+            
+            Name:<input type="text" id="name" placeholder="Enter your name">
+            <small id="nameError" class="error"></small><br>
+
+            Email:<input type="email" id="email" placeholder="Enter your email">
+            <small id="emailError" class="error"></small><br>
+
+            Contact Number:<input type="tel" id="contact" placeholder="10 digit number">
+            <small id="contactError" class="error"></small><br>
+
+            Gender:
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female </option>
+            </select>
+            <small id="genderError" class="error"></small><br>
+            Password:<input type="password" id="password" placeholder="Enter password">
+            <small id="passwordError" class="error"></small><br>
+            Confirm Password:<input type="password" id="confirmPassword" placeholder="Re-enter password">
+            <small id="confirmError" class="error"></small><br>
+
+            
+            <div class="buttons">
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        </section>
+        <section id="carouselSection" class="hidden">
+            <div class="carousel">
+                <button id="prevBtn">&#10094;</button>
+                <div class="slides" id="slides">
+                 <img src="https://picsum.photos/id/1015/800/400" alt="Image 1">
+                 <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqxHYglyfwwvng0_Z_kOtPW5ZJ8p7vTAOc4AWhTw_g4SfJF6cjnAX18a9d4CnPRzbu6mMMZyuy0cu8tw3ZSqqpV7UyQvQP_cUxu4KNSYyUKyzdsmx0m8coPnapNegqwEKn-eCxa_Q=s1360-w1360-h1020-rw" alt="Image 2">
+                <img src="https://picsum.photos/id/1039/800/400" alt="Image 3">
+                </div>
+                <button id="nextBtn">&#10095;</button>
+                <div class="rating">
+                <div id="stars">
+                    
+                </div>
+                <p id="ratingMsg"></p>
+                </div>
+
+            </div>
+                
+        </section>
+         <script src="app.js"></script>
+</body>
+</html>
